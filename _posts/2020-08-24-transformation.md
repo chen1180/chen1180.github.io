@@ -25,14 +25,14 @@ Let's begin the discussion with a simple senario, If we want to rotate a point _
 ![](/assets/img/post/rotation.png)
 
 Applying the linear algebra equation **Ax=b**, it's easy to write the new postion of p<sub>1</sub>:
-$$
+$
 p_1=R_1 \cdot p=
 \begin{bmatrix}
 \cos(90^{\circ})&-\sin(90^{\circ})\\
 \sin(90^{\circ})&\cos(90^{\circ})\\
 \end{bmatrix}\ \begin{bmatrix}
 3\\3\end{bmatrix}=\begin{bmatrix}-3\\3\end{bmatrix}
-$$
+$
 If we rotate p1 to p2 by 45 degree, then it can be writtern as:
 
 $$
