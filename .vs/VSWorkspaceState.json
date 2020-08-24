@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\assets\\img",
-    "\\assets\\js",
-    "\\docs",
-    "\\_includes",
+    "\\assets\\img\\private",
+    "\\pages",
     "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_includes\\head.html",
+  "SelectedNode": "\\_posts\\2020-02-26-flake-it-till-you-make-it.md",
   "PreviewInSolutionExplorer": false
 }

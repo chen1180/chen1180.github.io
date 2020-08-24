@@ -12,14 +12,15 @@ author: Chen Baocheng
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Blog: "index.html"
-  About: "aboutme"
+  Blog: "pages/categories"
+  About me: "aboutme"
   Tags: "tags.html"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Beutiful Jekyll tutorial: "https://w4ngatang.github.io/template-instructions/"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Not sure what to right: "2020-08-20-my-first-post"
+  Search: "pages/project"
 
 
 # --- Logo --- #
@@ -43,9 +44,9 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "chen1180@ntu.edu.sg"
-  facebook: deanattali
+  facebook: chen.baocheng.5
   github: "https://github.com/chen1180"
-  twitter: daattali
+  #twitter: daattali
   rss: true
 #  reddit: yourname
 #  linkedin: daattali
@@ -183,7 +184,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Singapore"
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:year/:month/:day/:title

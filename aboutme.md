@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: "You don't travel to see different things.  You travel to see things differently."
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi, my name is **Chen Baocheng**. I am currently working as a IC backend designer.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I obtained my Bachelor of engineering from Faculty of Mechanical engineering in NTU, Singapore. And I want to pursuit Master of engineering in the future.
 
-What else do you need?
+![](/assets/img/private/graduation.jpg)
+*Graduation*{: .mx-auto.d-block :}
 
-### my history
+I love coding and games. I wish to design my own games someday in the future. Currently, I am studying how to make game engine and create stunning and beautiful graphics from it. 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+There are so much fun for me to learn new knowledges. 
