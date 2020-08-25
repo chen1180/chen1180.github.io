@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transformation matrix
+title: Transformation
 description: A recap on projection,view,model matrix.
 tags: [Computer graphics]
 categories: Technical

@@ -33,7 +33,7 @@ p_2=R_2 \cdot p_1=
 -3\\3\end{bmatrix}=\begin{bmatrix}-4.24\\0.0\end{bmatrix}
 $$
 
-For matrix, the above two steps can be combined into one formula:
+For matrix, the above two steps can be combined into one equation:
 
 $$
 p=R_2 \cdot R_1 \cdot p_1=

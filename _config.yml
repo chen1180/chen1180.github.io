@@ -16,11 +16,9 @@ navbar-links:
   About me: "aboutme"
   Tags: "tags.html"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Beutiful Jekyll tutorial: "https://w4ngatang.github.io/template-instructions/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-    - Not sure what to right: "2020-08-20-my-first-post"
-  Search: "pages/project"
+    - Websites: "pages/resources"
 
 
 # --- Logo --- #
