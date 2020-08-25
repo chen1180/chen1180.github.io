@@ -47,19 +47,3 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 {% include shadertoy.html id="wdjBzd" %} 
 
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-ome inline Latex: $$a^2 + b^2 = c^2$$  
-$$\int e^{-kx} \, dx = -\frac{1}{k} e^{-kx}$$
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
