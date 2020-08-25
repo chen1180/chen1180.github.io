@@ -1,38 +1,27 @@
 ---
 layout: post
-title: Transformation matrix
-description: A recap on projection,view,model matrix.
+title: Homogeneous coordinate 
 tags: [Computer graphics]
 categories: Technical
 ---
 
-## Point and Vector
-In a game or a 3D graphical application, a point is normally represented by a 4-component column(row) vector.  
-$$p=\begin{bmatrix}
-a\\b\\c\\1\end
-{bmatrix}$$
 
-A vector is obtained by subtraction of two points. It has a zero fourth-component,$$\vec{v}=p_{1}-p_{2}=\begin{bmatrix}
-a\\b\\c\\1\end
-{bmatrix}-\begin{bmatrix}
-d\\e\\f\\1\end
-{bmatrix}=\begin{bmatrix}
-a-d\\b-e\\c-f\\0\end
-{bmatrix}$$
 ## Matrix
-Before start deriving the transformation matrix, it's important to understand why matrix is preferred in transformation calculation. 
+Before diving into the homogeneous coordinate, it's important to understand why matrix is preferred in transformation calculation. 
 Let's begin the discussion with a simple senario, If we want to rotate a point _**p**_ with respect to origin _**o**_ anti-clockwisely 90&deg;  
 ![](/assets/img/post/rotation.png)
 
 Applying the linear algebra equation **Ax=b**, it's easy to write the new postion of p<sub>1</sub>:
-$
+
+$$
 p_1=R_1 \cdot p=
 \begin{bmatrix}
 \cos(90^{\circ})&-\sin(90^{\circ})\\
 \sin(90^{\circ})&\cos(90^{\circ})\\
 \end{bmatrix}\ \begin{bmatrix}
 3\\3\end{bmatrix}=\begin{bmatrix}-3\\3\end{bmatrix}
-$
+$$  
+
 If we rotate p1 to p2 by 45 degree, then it can be writtern as:
 
 $$
@@ -72,6 +61,7 @@ If we wish to translate the point p to a new location p3,
 ![](/assets/img/post/translation.png)
 
 The position of a point can be changed by adding a vector.
+
 $$p_3=p+\vec{t}=\begin{bmatrix}
 3\\3\end
 {bmatrix}+\begin{bmatrix}
@@ -89,9 +79,24 @@ Either rotation first or translation first will make the form difficult to expan
 ### Homogeneous coordinate
 
 That's why homogeneous coordinates is used everywhere in computer graphics. It  plays a vital role in solving this problem. What it does is to introduce an addional dimension in the vector. A 2D vector will be expanded to 3D, likewise, a 3D vectoer will bring a 4th component with it.
-To illustrate it better, let's still use the above __translation__ case.
+
+In a game or a 3D graphical application, a point is normally represented by a 4-component column(row) vector.  
+$$p=\begin{bmatrix}
+a\\b\\c\\1\end
+{bmatrix}$$
+
+A vector is obtained by subtraction of two points. It has a zero fourth-component,$$\vec{v}=p_{1}-p_{2}=\begin{bmatrix}
+a\\b\\c\\1\end
+{bmatrix}-\begin{bmatrix}
+d\\e\\f\\1\end
+{bmatrix}=\begin{bmatrix}
+a-d\\b-e\\c-f\\0\end
+{bmatrix}$$
+
+For better illustration, let's still use the above __2D translation__ case.
 The postion of p will be $$\begin{bmatrix}3\\3\\1\end{bmatrix}$$,
-$$p_3=p+\vec{t}=\begin{bmatrix}
+
+So, $$p_3=p+\vec{t}=\begin{bmatrix}
 3\\3\\1\end
 {bmatrix}+\begin{bmatrix}
 -6\\-1\\0\end
@@ -132,9 +137,10 @@ p_2=R_2 \cdot R_1 \cdot p_1=
 3\\3\\1\end{bmatrix}=\begin{bmatrix}-4.24\\0\\1\end{bmatrix}
 $$
 
-The 3 by 3 matrix is written like this because the object rotates along
+The 3 by 3 matrix is written like this because the object rotates along the z-axis.
 
-**_voilà!!_** you can chain the rotation and translation operation again. 
+> **_voilà!!_** you can chain the rotation and translation operation again. 
+
 $$
 p_3=T \cdot R_2 \cdot R_1 \cdot p_1=\begin{bmatrix}
 1&0&-6\\0&1&-1\\0&0&1\end
@@ -151,24 +157,3 @@ p_3=T \cdot R_2 \cdot R_1 \cdot p_1=\begin{bmatrix}
 \end{bmatrix}\ \begin{bmatrix}
 3\\3\\1\end{bmatrix}=\begin{bmatrix}-3\\2\\1\end{bmatrix}
 $$
-
-## Demo
-
-{% include shadertoy.html id="wdjBzd" %} 
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-ome inline Latex: $$a^2 + b^2 = c^2$$  
-$$\int e^{-kx} \, dx = -\frac{1}{k} e^{-kx}$$
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
